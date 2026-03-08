@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Fixes
+
+- **PDF commands** — Fixed `pdf-to-text` and `pdf-to-images` consuming the PDF file data on first use, causing subsequent calls to fail with "The object can not be cloned".
+
 ## [0.2.5] - 2026-03-08
 
 ### Features

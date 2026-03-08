@@ -117,7 +117,7 @@ const pdfToText: CustomCommand = {
         const pdfjsLib = await import("pdfjs-dist");
 
         const doc = await pdfjsLib.getDocument({
-          data,
+          data: data.slice(),
           useWorkerFetch: false,
           isEvalSupported: false,
           useSystemFonts: true,
@@ -183,7 +183,7 @@ const pdfToImages: CustomCommand = {
         const pdfjsLib = await import("pdfjs-dist");
 
         const doc = await pdfjsLib.getDocument({
-          data,
+          data: data.slice(),
           useWorkerFetch: false,
           isEvalSupported: false,
           useSystemFonts: true,
