@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+## [0.2.5] - 2026-03-08
+
 ### Chores
 
 - Migrated to pnpm monorepo with `@office-agents/sdk`, `@office-agents/core`, and `@office-agents/excel` packages.
