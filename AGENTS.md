@@ -136,6 +136,7 @@ Each app is released independently with its own version tag, changelog, and Clou
 | ---------- | ------------- | ---------------------------------- | ---------------- |
 | Excel      | `excel-v*`    | `packages/excel/CHANGELOG.md`      | CF Pages `openexcel` |
 | PowerPoint | `ppt-v*`      | `packages/powerpoint/CHANGELOG.md` | CF Pages `openppt`   |
+| Word       | `word-v*`     | `packages/word/CHANGELOG.md`       | CF Pages `openword`  |
 | SDK        | `sdk-v*`      | `packages/sdk/CHANGELOG.md`        | npm `@office-agents/sdk` |
 | Bridge     | `bridge-v*`   | `packages/bridge/CHANGELOG.md`     | npm `@office-agents/bridge` |
 
@@ -146,10 +147,11 @@ Each app is released independently with its own version tag, changelog, and Clou
    ```bash
    pnpm release:excel patch    # or minor/major
    pnpm release:ppt patch      # or minor/major
+   pnpm release:word patch     # or minor/major
    pnpm release:sdk patch      # or minor/major
    pnpm release:bridge patch   # or minor/major
    ```
-3. The script bumps the version, stamps the changelog, commits, tags (`excel-v*` / `ppt-v*`), and pushes
+3. The script bumps the version, stamps the changelog, commits, tags (`excel-v*` / `ppt-v*` / `word-v*` / `sdk-v*` / `bridge-v*`), and pushes
 4. CI builds, deploys to Cloudflare Pages, and creates a GitHub release
 
 ## Configuration Storage
